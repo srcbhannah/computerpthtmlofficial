@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #7b0a0a, #7b0a0a);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            padding: 0 20px;
+        }
+        .intro h1 {
+            font-size: 4em;
+            margin: 0;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+        .intro p {
+            font-size: 1.5em;
+            margin: 10px 0 20px;
+            max-width: 600px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .intro button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #213c18;
+            background: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s, color 0.3s;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .intro button:hover {
+            transform: scale(1.1);
+            background: #213c18;
+            color: #fff;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <h1>Welcome to my website</h1>
+        <p>Discover amazing content and explore the beauty of phillipnes. Let’s create  something wonderful and  incredible memories together!</p>
+        <button><a href="intophtouristpot.html">Get Started</button>
+    </div>
+
+    <script>
+        function scrollToContent() {
+            alert("intophtouristpot.html");
+            // intophtouristpot
+        }
+    </script>
+</body>
+</html>

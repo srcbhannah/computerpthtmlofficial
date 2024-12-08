@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #7b0a0a;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+        header {
+            background: #213c18;
+            color: #FFFFFF;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            color: #FFFFFF;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .about-section {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about-content {
+            flex: 2;
+            min-width: 300px;
+        }
+        .about-content h2 {
+            margin-top: 0;
+            color: #FFFFFF;
+            font-size: 2em;
+        }
+        .about-content p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        footer {
+            background: #FFFFFF;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <p>Discover more about who we are and what we do</p>
+    </header>
+
+    <div class="container">
+        <div class="about-section">
+            <div class="about-image">
+                <img src="PHPICFORABOUTUS.jpg" alt="About Us">
+            </div>
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>
+                    Welcome to TRAVEL WITH PH, where innovation meets passion. Established in 2024, we are committed to delivering exceptional products and services that empower our customers to achieve their goals.
+                </p>
+                <p>
+                    Our team is dedicated to creating value and fostering meaningful connections through quality, integrity, and creativity. We believe in pushing boundaries and constantly evolving to meet the needs of a changing world.
+                </p>
+                <p>
+                    Thank you for being a part of our journey. Together, we can make great things happen.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 [Your Company Name]. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

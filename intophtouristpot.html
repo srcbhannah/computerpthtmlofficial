@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pretty Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #b3c7aa, #b3c7aa);
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #ffffffaa;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #bac5b5;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #bac5b5;
+        }
+        section {
+            padding: 50px;
+        }
+        .card {
+            display: inline-block;
+            background: #fff;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            color: #bac5b5;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tourist spots</h1>
+        <nav>
+            <a href="aboutuspage.html">About</a>
+            <a href="images.html">Gallery</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Using the versatility of HTML and CSS, we crafted a visually appealing and user-friendly website that showcases a variety of must-visit destinations. From serene natural landscapes to iconic cultural landmarks, the website provides a curated collection of places that inspire exploration and adventure. The seamless design, enhanced by CSS styling, ensures an engaging browsing experience, with vibrant images and organized content that highlight the unique features of each location. Whether you're a travel enthusiast or simply looking for inspiration for your next trip, our website serves as the perfect guide to discovering amazing places around the world.</p>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="card">
+            <img src="Philippines street food.jpg" alt="Placeholder Image">
+            <h3>WONDERS OF STREET FOOD</h3>
+            <p>street food is a vibrant and integral part of culinary culture around the world, offering a unique glimpse into the flavors and traditions of different regions. From sizzling skewers and aromatic noodle dishes to sweet treats and refreshing drinks, street food embodies diversity and creativity in every bite.</p>
+        </div>
+        <div class="card">
+            <img src="tradition.jpg" alt="Placeholder Image">
+            <h3>tradition</h3>
+            <p>Pasko, or Christmas in the Philippines, is a deeply cherished tradition celebrated with vibrant festivities, strong faith, and family gatherings. Known for having the longest Christmas season in the world, it begins as early as September with the "ber months." Filipinos decorate homes with colorful parols (star lanterns), sing carols, and attend Simbang Gabi, a series of dawn masses leading up to Christmas Day. The celebration is marked by sharing hearty feasts, exchanging gifts, and spreading joy, reflecting the Filipino spirit of love, unity, and generosity during the holiday season.</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <p>Contact me at <a href="mailto:youremail@example.com" style="color: #ff6b81;">youremail@example.com</a></p>
+        <p>&copy; 2024 travel with ph. All rights reserved.</p>
+    </footer>
+</body>
+</html>

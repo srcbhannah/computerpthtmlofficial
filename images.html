@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid with Hover Effect</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #7b0a0a;
+            color: 	#0eff00;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            aspect-ratio: 16 / 9;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+        .hover-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1.5em;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .image-container:hover .hover-text {
+            opacity: 1;
+        }
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1> TOP 10 DESTINATIONS </h1>
+    <p>Hover over each image to reveal a description. Images are arranged in two rows for larger displays and adjust for smaller screens.</p>
+    <div class="image-grid">
+        <div class="image-container">
+            <img src="image  (1).jpg" alt="Image 1">
+            <div class="hover-text">Panaraga Beach in Surigao del Sur is a hidden gem, with its crystal-clear waters and unspoiled coastline. A peaceful destination perfect for beach lovers, it offers soft, white sand and a serene atmosphere, making it an ideal spot for swimming, sunbathing, and relaxation away from the crowds.</div>
+        </div>
+        <div class="image-container">
+            <img src="image  (2).jpg" alt="Image 2">
+            <div class="hover-text">Nestled in the cool climate of Tagaytay, Picnic Grove offers families and visitors a chance to relax with stunning views of Taal Volcano and Lake. With open spaces, picnic areas, and exciting activities like horseback riding and zip-lining, it’s the perfect spot for a day of outdoor fun.
+</div>
+        </div>
+        <div class="image-container">
+            <img src="image  (3).jpg" alt="Image 3">
+            <div class="hover-text">Little Venice in Manila offers a charming escape with its Venetian-inspired canals and gondola rides.
+			Visitors can experience a unique European vibe amidst the bustling city, with beautiful views and quaint cafes lining the waterway,
+			making it a perfect spot for a peaceful afternoon or romantic outing.</div>
+        </div>
+        <div class="image-container">
+            <img src="image  (4).jpg" alt="Image 4">
+            <div class="hover-text">Fort Santiago in Manila is a historical gem, rich in stories of the Philippines’ colonial past. Part of the walled city of Intramuros, the fort features exhibits, ancient walls, and a museum, offering a glimpse into the nation’s history while providing a peaceful escape in the heart of Manila.</div>
+        </div>
+        <div class="image-container">
+            <img src="image  (5).jpg" alt="Image 5">
+            <div class="hover-text">Amaya View in Cagayan de Oro offers breathtaking panoramic views of the city and the Macajalar Bay. This scenic spot provides an ideal backdrop for outdoor activities like zip-lining or simply taking in the natural beauty of the area, perfect for families and adventure-seekers alike.</div>
+        </div>
+        <div class="image-container">
+            <img src="image  (6).jpg" alt="Image 6">
+            <div class="hover-text">A ride along the Loboc River in Bohol provides an unforgettable experience of nature’s beauty. The river cruise takes you through lush landscapes, offering picturesque views while enjoying local delicacies and live performances by Boholano musicians, 
+			making it a relaxing and culturally rich experience.</div>
+        </div>
+        <div class="image-container">
+            <img src="image  (7).jpg" alt="Image 7">
+            <div class="hover-text">Casa Manila, located in Intramuros, Manila, is a meticulously restored museum that showcases the opulent lifestyle of the Filipino elite during the Spanish colonial period. Built in traditional Spanish-Filipino architecture, the house features antique furniture, ornate woodwork, and period decor that reflect 19th-century colonial influences. Visitors can explore its beautifully preserved rooms, from grand salons to charming courtyards, offering a glimpse into the elegance of bygone eras. Casa Manila serves as a cultural treasure, preserving and celebrating the Philippines' rich colonial heritage.</div>
+        </div>
+        <div class="image-container">
+            <img src="image  (8).jpg" alt="Image 8">
+            <div class="hover-text">The Puerto Princesa Subterranean River National Park, located in Palawan, Philippines, is a UNESCO World Heritage Site renowned for its stunning natural beauty and biodiversity. The park features an 8.2-kilometer-long underground river that flows directly into the sea, passing through majestic limestone karst landscapes and intricate cave formations. Visitors can explore the river on guided boat tours, marveling at its vast chambers, stalactites, and stalagmites. The park is also home to diverse ecosystems, including mangrove forests, and provides a sanctuary for numerous plant and animal species,
+			making it a must-visit destination for nature enthusiasts.</div>
+        </div>
+        <div class="image-container">
+            <img src="image  (9).jpg" alt="Image 9">
+            <div class="hover-text">The Taoist Temple in Cebu offers visitors a peaceful retreat with its stunning architecture and panoramic views of the city. 
+			A symbol of Cebu's rich cultural heritage, this temple provides a tranquil space for prayer and reflection, set amidst lush surroundings and traditional Chinese designs.</div>
+        </div>
+        <div class="image-container">
+            <img src="image  (10).jpg" alt="Image 10">
+            <div class="hover-text">Located within the University of the Philippines campus, UP Garden Lagoon in Quezon City is a serene haven where nature meets urban life. With lush greenery, calm waters, and walking paths, it’s an ideal location to relax,
+			enjoy the outdoors, and immerse yourself in the tranquil atmosphere.</div>
+        </div>
+    </div>
+	<button onclick="history.back()">Go Back</button>
+</body>
+</html>
